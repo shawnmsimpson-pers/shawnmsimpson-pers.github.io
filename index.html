@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SwingCoach</title>
+<style>
+  :root {
+    --bg: #fbfaf7; --card: #ffffff; --ink: #1a1c1e; --soft: #53585d;
+    --line: #e2e0da; --accent: #1f6b58;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15181a; --card: #1c2023; --ink: #e8ecee; --soft: #a3abb1;
+      --line: #2a3034; --accent: #6ec3a8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .35rem; color: var(--accent); }
+  p, li { color: var(--ink); }
+  .lede { font-size: 1.05rem; color: var(--soft); margin: 0 0 1rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 6px; padding: 1.25rem 1.5rem; margin-top: 1.5rem;
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9em; background: var(--bg); border: 1px solid var(--line);
+    border-radius: 3px; padding: .05em .35em;
+  }
+  .date { color: var(--soft); font-size: .9rem; margin: 0 0 1rem; }
+  .foot { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line);
+          color: var(--soft); font-size: .9rem; }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>SwingCoach</h1>
+  <p class="lede">A private, personal tool used by one person &mdash; its author &mdash; to record
+  and review baseball and softball swings in a home batting cage, for coaching his own children.</p>
+  <p>It is not a product, it is not distributed, and it has no users other than its author.</p>
+
+  <div class="card">
+    <h2 id="privacy">Privacy policy</h2>
+    <p class="date">Last updated: 15 October 2026</p>
+
+    <h3>Who this covers</h3>
+    <p>SwingCoach is operated by a single individual for personal family use. There are no accounts,
+    no sign-ups and no other users. The only Google account it ever touches is the author&rsquo;s own.</p>
+
+    <h3>What Google data it accesses</h3>
+    <p>SwingCoach requests one Google scope:
+    <code>https://www.googleapis.com/auth/drive.file</code>.</p>
+    <p>That scope grants access <strong>only to files the application itself creates</strong> in the
+    author&rsquo;s own Google Drive. It cannot read, modify, move or delete any other file in that
+    Drive, including the folders it writes into, and it cannot see anything the author stores there
+    independently of this application.</p>
+    <p>SwingCoach requests no other Google scope, and accesses no other Google service.</p>
+
+    <h3>What it stores there, and why</h3>
+    <p>SwingCoach keeps an offsite backup copy of its own analysis corpus &mdash; swing video clips
+    recorded in the author&rsquo;s own batting cage, together with the measurement files derived from
+    them. The purpose is solely to survive the loss of the local machine or its attached storage.</p>
+    <p>The recordings are of the author and his own children, made by him in his own home. They are
+    stored in his own Google Drive, under his own account, counting against his own storage.</p>
+
+    <h3>Who the data is shared with</h3>
+    <p><strong>No one.</strong> The data is not shared, published, sold, transmitted to any third
+    party, or used for advertising, profiling, training, or any purpose other than the
+    author&rsquo;s own coaching review. There is no analytics, no telemetry and no external
+    processing service.</p>
+
+    <h3>Retention and deletion</h3>
+    <p>The author controls the data entirely and can delete any of it at any time by deleting the
+    files or folders from his own Google Drive, or by revoking the application&rsquo;s access from
+    his Google Account security settings. Revoking access immediately ends the application&rsquo;s
+    ability to reach any file.</p>
+
+    <h3>Security</h3>
+    <p>The application&rsquo;s credentials are stored with owner-only permissions on a single machine
+    on the author&rsquo;s home network. The application runs only on that machine and is not
+    reachable from the public internet.</p>
+
+    <h3>Changes</h3>
+    <p>If the application&rsquo;s use of Google data changes, this page will be updated before the
+    change takes effect.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy go to the author at the support address listed on the
+    application&rsquo;s Google consent screen.</p>
+  </div>
+
+  <p class="foot">This page exists so the application&rsquo;s Google OAuth consent screen can link to
+  a description and a privacy policy, as Google requires.</p>
+
+</div>
+</body>
+</html>
